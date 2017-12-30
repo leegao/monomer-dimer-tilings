@@ -9,6 +9,6 @@ a $n \times 3$ rectangle be covered completely and without overlap ("tiled") by 
 
 $$
 \begin{tikzpicture}
-\draw (0,0) rectangle (1,1) node[pos=1, anchor=south] {m};
+\draw (0,0) rectangle (1,1) node[pos=0.5] {m};
 \end{tikzpicture}
 $$
