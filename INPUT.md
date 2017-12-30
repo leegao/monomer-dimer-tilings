@@ -17,7 +17,18 @@ $$
 
 ------------------------
 
-For example
+For example, here's a $3 \times 2$ rectangular tiling:
+
+$$
+\begin{tikzpicture}
+\draw (0,3) rectangle (2,2) node[pos=0.5] {h};
+\draw (0,2) rectangle (2,1) node[pos=0.5] {h};
+\draw (0,1) rectangle (1,0) node[pos=0.5] {m};
+\draw (1,1) rectangle (2,0) node[pos=0.5] {m};
+\end{tikzpicture}
+$$
+
+or this $3 \times 5$ rectangular tiling:
 
 $$
 \begin{tikzpicture}

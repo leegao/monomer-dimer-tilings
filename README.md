@@ -11,6 +11,10 @@ a <img alt="$n \times 3$" src="https://rawgit.com/leegao/monomer-dimer-tilings/s
 
 ------------------------
 
-For example
+For example, here's a <img alt="$3 \times 2$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/d2a207b1ddb2c07906d819cec40e6c49.svg?invert_in_darkmode" align=middle width="36.52968pt" height="21.18732pt"/> rectangular tiling:
+
+<p align="center"><img alt="$$&#10;\begin{tikzpicture}&#10;\draw (0,3) rectangle (2,2) node[pos=0.5] {h};&#10;\draw (0,2) rectangle (2,1) node[pos=0.5] {h};&#10;\draw (0,1) rectangle (1,0) node[pos=0.5] {m};&#10;\draw (1,1) rectangle (2,0) node[pos=0.5] {m};&#10;\end{tikzpicture}&#10;$$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/a9d3ff2c080871833fa3ac5b8d610d0a.svg?invert_in_darkmode" align=middle width="94.20081pt" height="140.98095pt"/></p>
+
+or this <img alt="$3 \times 5$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/dd4efd8ab53bf4a40a0ee5e4c06cbdbf.svg?invert_in_darkmode" align=middle width="36.52968pt" height="21.18732pt"/> rectangular tiling:
 
 <p align="center"><img alt="$$&#10;\begin{tikzpicture}&#10;\draw (0,3) rectangle (1,1) node[pos=0.5] {v};&#10;\draw (1,3) rectangle (3,2) node[pos=0.5] {h};&#10;\draw (3,3) rectangle (4,2) node[pos=0.5] {m};&#10;\draw (4,3) rectangle (5,1) node[pos=0.5] {v};&#10;\draw (1,2) rectangle (2,1) node[pos=0.5] {m};&#10;\draw (2,2) rectangle (4,1) node[pos=0.5] {h};&#10;\draw (0,1) rectangle (1,0) node[pos=0.5] {m};&#10;\draw (1,1) rectangle (3,0) node[pos=0.5] {h};&#10;\draw (3,1) rectangle (4,0) node[pos=0.5] {m};&#10;\draw (4,1) rectangle (5,0) node[pos=0.5] {m};&#10;\end{tikzpicture}&#10;$$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/dda00bb5c7ede5c37b4ae8b3b3b0350c.svg?invert_in_darkmode" align=middle width="234.5145pt" height="140.98095pt"/></p>
