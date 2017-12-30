@@ -11,6 +11,6 @@ $$
 \begin{tikzpicture}
 \draw (0,0) rectangle (1,1) node[pos=0.5] {m};
 \draw (2,0) rectangle (4,1) node[pos=0.5] {h};
-\draw (5,1) rectangle (6,-1) node[pos=0.5] {v};
+\draw (5,1.5) rectangle (6,-0.5) node[pos=0.5] {v};
 \end{tikzpicture}
 $$
