@@ -8,3 +8,9 @@ either vertically (<img alt="$v$" src="https://rawgit.com/leegao/monomer-dimer-t
 a <img alt="$n \times 3$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/e13165a13b4e02249c42e972e74b4e17.svg?invert_in_darkmode" align=middle width="38.17737pt" height="21.18732pt"/> rectangle be covered completely and without overlap ("tiled") by such pieces?
 
 <p align="center"><img alt="$$&#10;\begin{tikzpicture}&#10;\draw (0,0) rectangle (1,1) node[pos=0.5] {m};&#10;\draw (2,0) rectangle (4,1) node[pos=0.5] {h};&#10;\draw (5,1.5) rectangle (6,-0.5) node[pos=0.5] {v};&#10;\end{tikzpicture}&#10;$$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/11333ed87889acc204fd6107f7776597.svg?invert_in_darkmode" align=middle width="281.2953pt" height="94.207245pt"/></p>
+
+------------------------
+
+For example
+
+<p align="center"><img alt="$$&#10;\begin{tikzpicture}&#10;\draw (0,3) rectangle (1,1) node[pos=0.5] {v};&#10;\draw (1,3) rectangle (3,2) node[pos=0.5] {h};&#10;\draw (3,3) rectangle (4,2) node[pos=0.5] {m};&#10;\draw (4,3) rectangle (5,1) node[pos=0.5] {v};&#10;\draw (1,2) rectangle (2,1) node[pos=0.5] {m};&#10;\draw (2,2) rectangle (4,1) node[pos=0.5] {h};&#10;\draw (0,1) rectangle (1,0) node[pos=0.5] {m};&#10;\draw (1,1) rectangle (3,0) node[pos=0.5] {h};&#10;\draw (3,1) rectangle (4,0) node[pos=0.5] {m};&#10;\draw (4,1) rectangle (5,0) node[pos=0.5] {m};&#10;\end{tikzpicture}&#10;$$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/dda00bb5c7ede5c37b4ae8b3b3b0350c.svg?invert_in_darkmode" align=middle width="234.5145pt" height="140.98095pt"/></p>
