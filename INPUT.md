@@ -7,8 +7,7 @@ be one of the three forms: monomers ($m$) that are $1 \times 1$ squares, and dim
 either vertically ($v$) oriented $1 \times 2$, or horizontally ($h$) oriented $2 \times 1$. In how many ways can
 a $n \times 3$ rectangle be covered completely and without overlap ("tiled") by such pieces?
 
-$$
+
 \begin{tikzpicture}
 \draw (0,0) rectangle (1,1) {$m$};
 \end{tikzpicture}
-$$
