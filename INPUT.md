@@ -44,3 +44,28 @@ $$
 \draw (4,1) rectangle (5,0) node[pos=0.5] {m};
 \end{tikzpicture}
 $$
+
+There are various exact enumerations for this problem (e.g. see http://algo.inria.fr/libraries/autocomb/MonoDiMer-html/MonoDiMer.html),
+but we'd like to approach this with a combination of enumerative combinatorics and computer programming to ease the tedious analysis.
+In particular, we'd like to reduce this problem into finding the singularities of a complex rational function.
+
+-----------------------------------------------------
+
+In the $3 \times 5$ example above, we can consider the tiling process as a sequence of constructions. We start
+with the singular vertical block:
+
+$$
+\begin{tikzpicture}
+\draw (0,3) rectangle (1,1) node[pos=0.5] {v};
+\end{tikzpicture}
+$$
+
+We can complete this column by adding a single monomer:
+
+$$
+\begin{tikzpicture}
+\draw (0,3) rectangle (1,1) node[pos=0.5] {v};
+\draw (0,1) rectangle (1,0) node[pos=0.5] {m};
+\end{tikzpicture}
+$$
+

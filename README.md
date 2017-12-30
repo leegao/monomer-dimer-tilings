@@ -18,3 +18,19 @@ For example, here's a <img alt="$3 \times 2$" src="https://rawgit.com/leegao/mon
 or this <img alt="$3 \times 5$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/dd4efd8ab53bf4a40a0ee5e4c06cbdbf.svg?invert_in_darkmode" align=middle width="36.52968pt" height="21.18732pt"/> rectangular tiling:
 
 <p align="center"><img alt="$$&#10;\begin{tikzpicture}&#10;\draw (0,3) rectangle (1,1) node[pos=0.5] {v};&#10;\draw (1,3) rectangle (3,2) node[pos=0.5] {h};&#10;\draw (3,3) rectangle (4,2) node[pos=0.5] {m};&#10;\draw (4,3) rectangle (5,1) node[pos=0.5] {v};&#10;\draw (1,2) rectangle (2,1) node[pos=0.5] {m};&#10;\draw (2,2) rectangle (4,1) node[pos=0.5] {h};&#10;\draw (0,1) rectangle (1,0) node[pos=0.5] {m};&#10;\draw (1,1) rectangle (3,0) node[pos=0.5] {h};&#10;\draw (3,1) rectangle (4,0) node[pos=0.5] {m};&#10;\draw (4,1) rectangle (5,0) node[pos=0.5] {m};&#10;\end{tikzpicture}&#10;$$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/dda00bb5c7ede5c37b4ae8b3b3b0350c.svg?invert_in_darkmode" align=middle width="234.5145pt" height="140.98095pt"/></p>
+
+There are various exact enumerations for this problem (e.g. see http://algo.inria.fr/libraries/autocomb/MonoDiMer-html/MonoDiMer.html),
+but we'd like to approach this with a combination of enumerative combinatorics and computer programming to ease the tedious analysis.
+In particular, we'd like to reduce this problem into finding the singularities of a complex rational function.
+
+-----------------------------------------------------
+
+In the <img alt="$3 \times 5$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/dd4efd8ab53bf4a40a0ee5e4c06cbdbf.svg?invert_in_darkmode" align=middle width="36.52968pt" height="21.18732pt"/> example above, we can consider the tiling process as a sequence of constructions. We start
+with the singular vertical block:
+
+<p align="center"><img alt="$$&#10;\begin{tikzpicture}&#10;\draw (0,3) rectangle (1,1) node[pos=0.5] {v};&#10;\end{tikzpicture}&#10;$$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/481e997d914bcd7d51a16bc6104e4628.svg?invert_in_darkmode" align=middle width="47.43354pt" height="94.20741pt"/></p>
+
+We can complete this column by adding a single monomer:
+
+<p align="center"><img alt="$$&#10;\begin{tikzpicture}&#10;\draw (0,3) rectangle (1,1) node[pos=0.5] {v};&#10;\draw (0,1) rectangle (1,0) node[pos=0.5] {m};&#10;\end{tikzpicture}&#10;$$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/4541228356af488f7d8ade3126ebc02f.svg?invert_in_darkmode" align=middle width="47.43354pt" height="140.98095pt"/></p>
+
