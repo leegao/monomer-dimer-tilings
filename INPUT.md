@@ -8,7 +8,7 @@ either vertically ($v$) oriented $1 \times 2$, or horizontally ($h$) oriented $2
 a $n \times 3$ rectangle be covered completely and without overlap ("tiled") by such pieces?
 
 $$
-m = \begin{tikzpicture}
-\draw (0,0) rectangle (1,1);
+\begin{tikzpicture}
+\draw (0,0) rectangle (1,1) {$m$};
 \end{tikzpicture}
 $$
