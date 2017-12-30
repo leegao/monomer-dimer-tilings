@@ -9,6 +9,6 @@ a $n \times 3$ rectangle be covered completely and without overlap ("tiled") by 
 
 $$
 m = \begin{tikzpicture}
-(0,0) rectangle (1,1)
+\draw (0,0) rectangle (1,1);
 \end{tikzpicture}
 $$
