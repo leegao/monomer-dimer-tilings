@@ -10,7 +10,7 @@ a $n \times 3$ rectangle be covered completely and without overlap ("tiled") by 
 $$
 \begin{tikzpicture}
 \draw (0,0) rectangle (1,1) node[pos=0.5] {m};
-\draw (3,0) rectangle (5,1) node[pos=0.5] {h};
-\draw (7,0) rectangle (7,2) node[pos=0.5] {v};
+\draw (2,0) rectangle (4,1) node[pos=0.5] {h};
+\draw (5,0) rectangle (6,2) node[pos=0.5] {v};
 \end{tikzpicture}
 $$
