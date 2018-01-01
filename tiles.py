@@ -1,9 +1,9 @@
 # Tiles a particular 3 x N block with monomers and dimers
 
 blocks = '''
-gg    g  gg   g
-g *hh=ggtg *m=g
-gg    g  gg   g
+g  v g g    g  g  m gg
+g *v=gtg *m=ggtg * =g
+gg   g gg   gg gg   gg
 '''.strip().splitlines()
 
 def parse_blocks(blocks, c = ()):
@@ -53,7 +53,7 @@ def print_blocks(parsed_blocks, c = ()):
 print r'''
 $$
 \begin{tikzpicture}'''
-parse_blocks(blocks, c=['or', 'after'])
+parse_blocks(blocks, c=['or', 'or'])
 print r'''\end{tikzpicture}
 $$
 '''
