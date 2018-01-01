@@ -79,7 +79,7 @@ $$
 \draw (9,3) rectangle (10,1) node[pos=0.5] {v};
 \draw (10,3) rectangle (12,2) node[pos=0.5] {h};
 \draw[draw=none] (1,2) rectangle (2,1) node[pos=0.5] { };
-\draw[draw=none] (2,2) rectangle (3,1) node[pos=0.5] {+};
+\draw[draw=none] (2,2) rectangle (3,1) node[pos=0.5] {\(\times\)};
 \draw[draw=none] (3,2) rectangle (4,1) node[pos=0.5] { };
 \draw (4,2) rectangle (5,1) node[pos=0.5] {m};
 \draw[draw=none] (5,2) rectangle (6,1) node[pos=0.5] { };
@@ -115,7 +115,7 @@ $$
 \draw (8,3) rectangle (10,2) node[pos=0.5] {h};
 \draw (1,2) rectangle (2,1) node[pos=0.5] {m};
 \draw[draw=none] (2,2) rectangle (3,1) node[pos=0.5] { };
-\draw[draw=none] (3,2) rectangle (4,1) node[pos=0.5] {+};
+\draw[draw=none] (3,2) rectangle (4,1) node[pos=0.5] {\(\times\)};
 \draw (4,2) rectangle (6,1) node[pos=0.5] {h};
 \draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {=};
 \draw (8,2) rectangle (9,1) node[pos=0.5] {m};
@@ -146,7 +146,7 @@ $$
 \draw (10,3) rectangle (11,2) node[pos=0.5] {m};
 \draw (1,2) rectangle (2,1) node[pos=0.5] {m};
 \draw (2,2) rectangle (4,1) node[pos=0.5] {h};
-\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {+};
+\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {\(\times\)};
 \draw[draw=none] (5,2) rectangle (6,1) node[pos=0.5] { };
 \draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {=};
 \draw (8,2) rectangle (9,1) node[pos=0.5] {m};
@@ -177,7 +177,7 @@ $$
 \draw (11,3) rectangle (12,1) node[pos=0.5] {v};
 \draw (1,2) rectangle (2,1) node[pos=0.5] {m};
 \draw (2,2) rectangle (4,1) node[pos=0.5] {h};
-\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {+};
+\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {\(\times\)};
 \draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {=};
 \draw (8,2) rectangle (9,1) node[pos=0.5] {m};
 \draw (9,2) rectangle (11,1) node[pos=0.5] {h};
@@ -211,7 +211,7 @@ $$
 \draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
 \draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1) node[pos=0.5] {before};
 \draw[fill=lightgray!40,draw=none] (2,2) rectangle (3,1);
-\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {+};
+\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {\(\times\)};
 \draw (5,2) rectangle (6,1) node[pos=0.5] {m};
 \draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {=};
 \draw[fill=lightgray!40,draw=none] (7,2) rectangle (8,1);
@@ -244,7 +244,7 @@ $$
 \draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
 \draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1) node[pos=0.5] {before};
 \draw[fill=lightgray!40,draw=none] (2,2) rectangle (3,1);
-\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {+};
+\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {\(\times\)};
 \draw (5,2) rectangle (7,1) node[pos=0.5] {h};
 \draw[draw=none] (7,2) rectangle (8,1) node[pos=0.5] {=};
 \draw[fill=lightgray!40,draw=none] (8,2) rectangle (9,1);
