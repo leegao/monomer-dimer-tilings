@@ -266,6 +266,8 @@ $$
 \begin{tikzpicture}
 \draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
 \draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (6,3) rectangle (7,2);
+\draw[fill=lightgray!40,draw=none] (9,3) rectangle (10,2);
 \draw[fill=lightgray!40,draw=none] (10,3) rectangle (11,2);
 \draw[fill=lightgray!40,draw=none] (14,3) rectangle (15,2);
 \draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
@@ -273,13 +275,17 @@ $$
 \draw (3,2) rectangle (5,1) node[pos=0.5] {h};
 \draw[draw=none] (5,2) rectangle (6,1) node[pos=0.5] {=};
 \draw[fill=lightgray!40,draw=none] (6,2) rectangle (7,1);
+\draw[fill=lightgray!40,draw=none] (7,2) rectangle (8,1);
 \draw[draw=none] (8,2) rectangle (9,1) node[pos=0.5] {or};
+\draw[fill=lightgray!40,draw=none] (9,2) rectangle (10,1);
 \draw[draw=none] (11,2) rectangle (12,1) node[pos=0.5] {\(\times\)};
 \draw (12,2) rectangle (13,1) node[pos=0.5] {m};
 \draw[draw=none] (13,2) rectangle (14,1) node[pos=0.5] {=};
 \draw[fill=lightgray!40,draw=none] (14,2) rectangle (15,1);
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
 \draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\draw[fill=lightgray!40,draw=none] (6,1) rectangle (7,0);
+\draw[fill=lightgray!40,draw=none] (9,1) rectangle (10,0);
 \draw[fill=lightgray!40,draw=none] (10,1) rectangle (11,0);
 \draw[fill=lightgray!40,draw=none] (14,1) rectangle (15,0);
 \end{tikzpicture}
