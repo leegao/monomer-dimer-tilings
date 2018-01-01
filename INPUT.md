@@ -107,3 +107,67 @@ $$
 \draw (10,1) rectangle (12,0) node[pos=0.5] {h};
 \end{tikzpicture}
 $$
+
+Following that, we can add the horizontal block in the middle to get a contour with just a single protrusion in
+the middle.
+
+$$
+\begin{tikzpicture}
+\draw (0,3) rectangle (1,1) node[pos=0.5] {v};
+\draw (1,3) rectangle (3,2) node[pos=0.5] {h};
+\draw[draw=none] (3,3) rectangle (4,2) node[pos=0.5] { };
+\draw[draw=none] (4,3) rectangle (5,2) node[pos=0.5] { };
+\draw[draw=none] (5,3) rectangle (6,2) node[pos=0.5] { };
+\draw[draw=none] (6,3) rectangle (7,2) node[pos=0.5] { };
+\draw (7,3) rectangle (8,1) node[pos=0.5] {v};
+\draw (8,3) rectangle (10,2) node[pos=0.5] {h};
+\draw (1,2) rectangle (2,1) node[pos=0.5] {m};
+\draw[draw=none] (2,2) rectangle (3,1) node[pos=0.5] { };
+\draw[draw=none] (3,2) rectangle (4,1) node[pos=0.5] {+};
+\draw (4,2) rectangle (6,1) node[pos=0.5] {h};
+\draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {=};
+\draw (8,2) rectangle (9,1) node[pos=0.5] {m};
+\draw (9,2) rectangle (11,1) node[pos=0.5] {h};
+\draw (0,1) rectangle (1,0) node[pos=0.5] {m};
+\draw (1,1) rectangle (3,0) node[pos=0.5] {h};
+\draw[draw=none] (3,1) rectangle (4,0) node[pos=0.5] { };
+\draw[draw=none] (4,1) rectangle (5,0) node[pos=0.5] { };
+\draw[draw=none] (5,1) rectangle (6,0) node[pos=0.5] { };
+\draw[draw=none] (6,1) rectangle (7,0) node[pos=0.5] { };
+\draw (7,1) rectangle (8,0) node[pos=0.5] {m};
+\draw (8,1) rectangle (10,0) node[pos=0.5] {h};
+\end{tikzpicture}
+$$
+
+Adding the two monomers on the top and the bottom corners results in a smooth contour:
+
+$$
+\begin{tikzpicture}
+\draw (0,3) rectangle (1,1) node[pos=0.5] {v};
+\draw (1,3) rectangle (3,2) node[pos=0.5] {h};
+\draw[draw=none] (3,3) rectangle (4,2) node[pos=0.5] { };
+\draw[draw=none] (4,3) rectangle (5,2) node[pos=0.5] { };
+\draw (5,3) rectangle (6,2) node[pos=0.5] {m};
+\draw[draw=none] (6,3) rectangle (7,2) node[pos=0.5] { };
+\draw (7,3) rectangle (8,1) node[pos=0.5] {v};
+\draw (8,3) rectangle (10,2) node[pos=0.5] {h};
+\draw (10,3) rectangle (11,2) node[pos=0.5] {m};
+\draw (1,2) rectangle (2,1) node[pos=0.5] {m};
+\draw (2,2) rectangle (4,1) node[pos=0.5] {h};
+\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {+};
+\draw[draw=none] (5,2) rectangle (6,1) node[pos=0.5] { };
+\draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {=};
+\draw (8,2) rectangle (9,1) node[pos=0.5] {m};
+\draw (9,2) rectangle (11,1) node[pos=0.5] {h};
+\draw (0,1) rectangle (1,0) node[pos=0.5] {m};
+\draw (1,1) rectangle (3,0) node[pos=0.5] {h};
+\draw[draw=none] (3,1) rectangle (4,0) node[pos=0.5] { };
+\draw[draw=none] (4,1) rectangle (5,0) node[pos=0.5] { };
+\draw (5,1) rectangle (6,0) node[pos=0.5] {m};
+\draw[draw=none] (6,1) rectangle (7,0) node[pos=0.5] { };
+\draw (7,1) rectangle (8,0) node[pos=0.5] {m};
+\draw (8,1) rectangle (10,0) node[pos=0.5] {h};
+\draw (10,1) rectangle (11,0) node[pos=0.5] {m};
+\end{tikzpicture}
+$$
+
