@@ -1,9 +1,9 @@
 # Tiles a particular 3 x N block with monomers and dimers
 
 blocks = '''
-vhh  m vhhm
-vmhh+ =vmhh
-mhh  m mhhm
+vhhm v vhhmv
+vmhh+v=vmhhv
+mhhm m mhhmm
 '''.strip().splitlines()
 
 def parse_blocks(blocks):
@@ -33,7 +33,7 @@ def print_blocks(parsed_blocks):
             print '\draw (%s,%s) rectangle (%s,%s) node[pos=0.5] {h};' % (h, 3-v, h + 2, 3-(v + 1))
         elif token == 'm':
             print '\draw (%s,%s) rectangle (%s,%s) node[pos=0.5] {m};' % (h, 3-v, h + 1, 3-(v + 1))
-        elif token != 's':
+        elif token != ' ':
             print '\draw[draw=none] (%s,%s) rectangle (%s,%s) node[pos=0.5] {%s};' % (h, 3-v, h + 1, 3-(v + 1), token)
 
 print r'''

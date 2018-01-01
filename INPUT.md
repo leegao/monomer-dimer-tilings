@@ -52,15 +52,7 @@ In particular, we'd like to reduce this problem into finding the singularities o
 -----------------------------------------------------
 
 In the $3 \times 5$ example above, we can consider the tiling process as a sequence of constructions. We start
-with the singular vertical block:
-
-$$
-\begin{tikzpicture}
-\draw (0,3) rectangle (1,1) node[pos=0.5] {v};
-\end{tikzpicture}
-$$
-
-We can complete this column by adding a single monomer:
+with the $3 \times 1$ line at the beginning:
 
 $$
 \begin{tikzpicture}
@@ -171,3 +163,31 @@ $$
 \end{tikzpicture}
 $$
 
+Finally, adding in the final line completes the rectangle
+
+$$
+\begin{tikzpicture}
+\draw (0,3) rectangle (1,1) node[pos=0.5] {v};
+\draw (1,3) rectangle (3,2) node[pos=0.5] {h};
+\draw (3,3) rectangle (4,2) node[pos=0.5] {m};
+\draw (5,3) rectangle (6,1) node[pos=0.5] {v};
+\draw (7,3) rectangle (8,1) node[pos=0.5] {v};
+\draw (8,3) rectangle (10,2) node[pos=0.5] {h};
+\draw (10,3) rectangle (11,2) node[pos=0.5] {m};
+\draw (11,3) rectangle (12,1) node[pos=0.5] {v};
+\draw (1,2) rectangle (2,1) node[pos=0.5] {m};
+\draw (2,2) rectangle (4,1) node[pos=0.5] {h};
+\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {+};
+\draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {=};
+\draw (8,2) rectangle (9,1) node[pos=0.5] {m};
+\draw (9,2) rectangle (11,1) node[pos=0.5] {h};
+\draw (0,1) rectangle (1,0) node[pos=0.5] {m};
+\draw (1,1) rectangle (3,0) node[pos=0.5] {h};
+\draw (3,1) rectangle (4,0) node[pos=0.5] {m};
+\draw (5,1) rectangle (6,0) node[pos=0.5] {m};
+\draw (7,1) rectangle (8,0) node[pos=0.5] {m};
+\draw (8,1) rectangle (10,0) node[pos=0.5] {h};
+\draw (10,1) rectangle (11,0) node[pos=0.5] {m};
+\draw (11,1) rectangle (12,0) node[pos=0.5] {m};
+\end{tikzpicture}
+$$
