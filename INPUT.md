@@ -68,30 +68,35 @@ our work-in-progress "rectangle" will only have holes that are "shallow" enough 
 
 $$
 \begin{tikzpicture}
-\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
-\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
-\draw[fill=lightgray!40,draw=none] (6,3) rectangle (7,2);
-\draw[fill=lightgray!40,draw=none] (11,3) rectangle (12,2);
-\draw[fill=lightgray!40,draw=none] (12,3) rectangle (13,2);
-\draw[fill=lightgray!40,draw=none] (16,3) rectangle (17,2);
-\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw (0,3) rectangle (1,1) node[pos=0.5] {v};
+\draw[draw=none] (1,3) rectangle (2,2) node[pos=0.5] { };
+\draw[draw=none] (2,3) rectangle (3,2) node[pos=0.5] { };
+\draw[draw=none] (3,3) rectangle (4,2) node[pos=0.5] { };
+\draw (4,3) rectangle (6,2) node[pos=0.5] {h};
+\draw[draw=none] (6,3) rectangle (7,2) node[pos=0.5] { };
+\draw[draw=none] (7,3) rectangle (8,2) node[pos=0.5] { };
+\draw[draw=none] (8,3) rectangle (9,2) node[pos=0.5] { };
+\draw (9,3) rectangle (10,1) node[pos=0.5] {v};
+\draw (10,3) rectangle (12,2) node[pos=0.5] {h};
+\draw[draw=none] (1,2) rectangle (2,1) node[pos=0.5] { };
 \draw[draw=none] (2,2) rectangle (3,1) node[pos=0.5] {\(\times\)};
-\draw (3,2) rectangle (5,1) node[pos=0.5] {h};
-\draw[draw=none] (5,2) rectangle (6,1) node[pos=0.5] {=};
-\draw[fill=lightgray!40,draw=none] (6,2) rectangle (7,1);
-\draw[fill=lightgray!40,draw=none] (7,2) rectangle (8,1);
-\draw[draw=none] (9,2) rectangle (10,1) node[pos=0.5] {or};
-\draw[fill=lightgray!40,draw=none] (11,2) rectangle (12,1);
-\draw[draw=none] (13,2) rectangle (14,1) node[pos=0.5] {\(\times\)};
-\draw (14,2) rectangle (15,1) node[pos=0.5] {m};
-\draw[draw=none] (15,2) rectangle (16,1) node[pos=0.5] {=};
-\draw[fill=lightgray!40,draw=none] (16,2) rectangle (17,1);
-\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
-\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
-\draw[fill=lightgray!40,draw=none] (6,1) rectangle (7,0);
-\draw[fill=lightgray!40,draw=none] (11,1) rectangle (12,0);
-\draw[fill=lightgray!40,draw=none] (12,1) rectangle (13,0);
-\draw[fill=lightgray!40,draw=none] (16,1) rectangle (17,0);
+\draw[draw=none] (3,2) rectangle (4,1) node[pos=0.5] { };
+\draw (4,2) rectangle (5,1) node[pos=0.5] {m};
+\draw[draw=none] (5,2) rectangle (6,1) node[pos=0.5] { };
+\draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] { };
+\draw[draw=none] (7,2) rectangle (8,1) node[pos=0.5] {=};
+\draw[draw=none] (8,2) rectangle (9,1) node[pos=0.5] { };
+\draw (10,2) rectangle (11,1) node[pos=0.5] {m};
+\draw (0,1) rectangle (1,0) node[pos=0.5] {m};
+\draw[draw=none] (1,1) rectangle (2,0) node[pos=0.5] { };
+\draw[draw=none] (2,1) rectangle (3,0) node[pos=0.5] { };
+\draw[draw=none] (3,1) rectangle (4,0) node[pos=0.5] { };
+\draw (4,1) rectangle (6,0) node[pos=0.5] {h};
+\draw[draw=none] (6,1) rectangle (7,0) node[pos=0.5] { };
+\draw[draw=none] (7,1) rectangle (8,0) node[pos=0.5] { };
+\draw[draw=none] (8,1) rectangle (9,0) node[pos=0.5] { };
+\draw (9,1) rectangle (10,0) node[pos=0.5] {m};
+\draw (10,1) rectangle (12,0) node[pos=0.5] {h};
 \end{tikzpicture}
 $$
 
