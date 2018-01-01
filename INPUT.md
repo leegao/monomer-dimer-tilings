@@ -191,3 +191,102 @@ $$
 \draw (11,1) rectangle (12,0) node[pos=0.5] {m};
 \end{tikzpicture}
 $$
+
+----------------------------------------
+
+You may have noticed above, but there's a set of rules that governs these transformations. For example, suppose
+we have a two-prong node, there are two transformations we can make. First, we could add a single monomer and get
+a straight-line contour on the rightmost edge.
+
+$$
+\begin{tikzpicture}
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (2,3) rectangle (3,2);
+\draw[fill=lightgray!40,draw=none] (3,3) rectangle (4,2);
+\draw[fill=lightgray!40,draw=none] (7,3) rectangle (8,2);
+\draw[fill=lightgray!40,draw=none] (8,3) rectangle (9,2);
+\draw[fill=lightgray!40,draw=none] (9,3) rectangle (10,2);
+\draw[fill=lightgray!40,draw=none] (10,3) rectangle (11,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1) node[pos=0.5] {before};
+\draw[fill=lightgray!40,draw=none] (2,2) rectangle (3,1);
+\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {+};
+\draw (5,2) rectangle (6,1) node[pos=0.5] {m};
+\draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (7,2) rectangle (8,1);
+\draw[fill=lightgray!40,draw=none] (8,2) rectangle (9,1) node[pos=0.5] {after};
+\draw[fill=lightgray!40,draw=none] (9,2) rectangle (10,1);
+\draw[fill=lightgray!40,draw=none] (10,2) rectangle (11,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\draw[fill=lightgray!40,draw=none] (2,1) rectangle (3,0);
+\draw[fill=lightgray!40,draw=none] (3,1) rectangle (4,0);
+\draw[fill=lightgray!40,draw=none] (7,1) rectangle (8,0);
+\draw[fill=lightgray!40,draw=none] (8,1) rectangle (9,0);
+\draw[fill=lightgray!40,draw=none] (9,1) rectangle (10,0);
+\draw[fill=lightgray!40,draw=none] (10,1) rectangle (11,0);
+\end{tikzpicture}
+$$
+
+On the other hand, we could also add in a horizontal block to get a single central hump on the rightmost edge.
+
+$$
+\begin{tikzpicture}
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (2,3) rectangle (3,2);
+\draw[fill=lightgray!40,draw=none] (3,3) rectangle (4,2);
+\draw[fill=lightgray!40,draw=none] (8,3) rectangle (9,2);
+\draw[fill=lightgray!40,draw=none] (9,3) rectangle (10,2);
+\draw[fill=lightgray!40,draw=none] (10,3) rectangle (11,2);
+\draw[fill=lightgray!40,draw=none] (11,3) rectangle (12,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1) node[pos=0.5] {before};
+\draw[fill=lightgray!40,draw=none] (2,2) rectangle (3,1);
+\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {+};
+\draw (5,2) rectangle (7,1) node[pos=0.5] {h};
+\draw[draw=none] (7,2) rectangle (8,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (8,2) rectangle (9,1);
+\draw[fill=lightgray!40,draw=none] (9,2) rectangle (10,1) node[pos=0.5] {after};
+\draw[fill=lightgray!40,draw=none] (10,2) rectangle (11,1);
+\draw[fill=lightgray!40,draw=none] (11,2) rectangle (12,1);
+\draw[fill=lightgray!40,draw=none] (12,2) rectangle (13,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\draw[fill=lightgray!40,draw=none] (2,1) rectangle (3,0);
+\draw[fill=lightgray!40,draw=none] (3,1) rectangle (4,0);
+\draw[fill=lightgray!40,draw=none] (8,1) rectangle (9,0);
+\draw[fill=lightgray!40,draw=none] (9,1) rectangle (10,0);
+\draw[fill=lightgray!40,draw=none] (10,1) rectangle (11,0);
+\draw[fill=lightgray!40,draw=none] (11,1) rectangle (12,0);
+\end{tikzpicture}
+$$
+
+If we don't care about what the blocks on the right-most side are, we can actually characterize these
+operational rules by just specifying transformations of the right-most contours. The above rules generates
+the following operational equations for the contours:
+
+$$
+\begin{tikzpicture}
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (10,3) rectangle (11,2);
+\draw[fill=lightgray!40,draw=none] (14,3) rectangle (15,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[draw=none] (2,2) rectangle (3,1) node[pos=0.5] {\(\times\)};
+\draw (3,2) rectangle (5,1) node[pos=0.5] {h};
+\draw[draw=none] (5,2) rectangle (6,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (6,2) rectangle (7,1);
+\draw[draw=none] (8,2) rectangle (9,1) node[pos=0.5] {or};
+\draw[draw=none] (11,2) rectangle (12,1) node[pos=0.5] {\(\times\)};
+\draw (12,2) rectangle (13,1) node[pos=0.5] {m};
+\draw[draw=none] (13,2) rectangle (14,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (14,2) rectangle (15,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\draw[fill=lightgray!40,draw=none] (10,1) rectangle (11,0);
+\draw[fill=lightgray!40,draw=none] (14,1) rectangle (15,0);
+\end{tikzpicture}
+$$
+
