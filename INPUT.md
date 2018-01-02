@@ -870,7 +870,7 @@ v & h^2 & m & m &  &  & \\
 \draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
 \end{tikzpicture}
 \\
-\end{array}\right)
+\end{array}\right)_{\text{initial}}
 $$
 
 The above power denotes the enumeration of all shapes after applying $n$ transformations.
@@ -934,5 +934,72 @@ $$
 \draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
 \end{tikzpicture}
 \\
-\end{array}\right) = \Gamma^n \times \left(\begin{array}{c}1\\0\\0\\0\\0\\0\\0\end{array}\right)
+\end{array}\right)_n = \Gamma^n \times \left(\begin{array}{c}1\\0\\0\\0\\0\\0\\0\end{array}\right)
+$$
+
+where the initial state is the first column of the identity, $e_1$.
+
+We know that $\left(I + \Gamma + \Gamma^2 + \cdots\right) \times e_1$ denotes the set of all configurations reachable
+from an empty initial configurations. Now,
+
+$$
+I + \Gamma + \Gamma^2 + \cdots = \left(I - \Gamma\right)^{-1}
+$$
+
+which allows us to compute the full set of reachable configurations (compressed as a set of rational equations)
+
+$$
+\left(\begin{array}{c}
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+\\
+\end{array}\right) = \left(I - \Gamma\right)^{-1} \times e_1
 $$
