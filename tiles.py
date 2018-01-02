@@ -10,16 +10,21 @@
 # g *hh=gg
 # gg    g
 # '''.strip().splitlines()
-blocks = '''
-gg    g
-g *hh=gg
-g  hh gg
-'''.strip().splitlines()
+# blocks = '''
+# gg    g
+# g *hh=gg
+# g  hh gg
+# '''.strip().splitlines()
 # blocks = '''
 # g hh g   g
 # g*hh=gt =g
 # g hh g   g
 # '''.strip().splitlines()
+blocks = '''
+g  m gg g    g  g  hh gg
+gg* =ggtgg* =ggtgg*  =g
+g    g  g  m gg g  hh gg
+'''.strip().splitlines()
 
 def parse_blocks(blocks, c = ()):
     seen = set()
