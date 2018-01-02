@@ -100,14 +100,22 @@ def fmt(block):
     parse_blocks(block, c=['or', 'or', 'or'])
     print r'''\end{tikzpicture}'''
 
-print '~'
-for b in ablocks:
-    print '&'
-    fmt(b)
+# # Matrix
+# print '~'
+# for b in ablocks:
+#     print '&'
+#     fmt(b)
+#
+# print r'\\'
+# for i, b in enumerate(ablocks):
+#     fmt(b)
+#     for j in range(7):
+#         print r'& \vspace*{-0.65cm} ' + (r'\(%s\)'%rules[i][j] if rules[i][j] else '')
+#     print r'\\'
 
-print r'\\'
-for i, b in enumerate(ablocks):
+# for i in range(7):
+#     print ' & '.join([r'%s'%rules[i][j] if rules[i][j] else '' for j in range(7)]) + r'\\'
+
+for b in ablocks:
     fmt(b)
-    for j in range(7):
-        print r'& \vspace*{-0.65cm} ' + (r'\(%s\)'%rules[i][j] if rules[i][j] else '')
     print r'\\'

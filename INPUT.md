@@ -780,7 +780,7 @@ $$
 \end{array}
 $$
 
-Reading vertically, each column encodes one of the rules presented above. For example, $\begin{tikzpicture}[scale = 0.15]
+Reading this table vertically, each column encodes one of the rules presented above. For example, $\begin{tikzpicture}[scale = 0.15]
 \draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
 \draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
@@ -804,3 +804,73 @@ Reading vertically, each column encodes one of the rules presented above. For ex
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
 \draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
 \end{tikzpicture}$.
+
+However, if we read each row horizontally, we get the set of transformation we can make to each of the
+contours that will eventually end up with the left-most shape in that row. In fact, we can think of this
+table as a transition matrix $\Gamma$ where
+
+$$
+\left(\Gamma = \begin{array}{ccccccc}
+h^3 & v &  & v & m & m & m\\
+m &  &  &  &  & h & \\
+m &  &  &  &  &  & h\\
+m &  &  &  & h &  & \\
+v & m & m & h^2 &  &  & \\
+v & h^2 & m & m &  &  & \\
+ & m & h^2 & m &  &  & \\
+\end{array}\right)^n \times \left(\begin{array}{c}
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+\\
+\end{array}\right)
+$$
+
+The above power denotes the enumeration of all shapes after applying $n$ transformations.
