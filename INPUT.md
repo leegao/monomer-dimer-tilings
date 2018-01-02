@@ -1024,5 +1024,11 @@ $$
 \draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
 \draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
-\end{tikzpicture} = e_1^{T} \times \left(I - \Gamma\right)^{-1} e_1
+\end{tikzpicture}(m) = e_1^{T} \times \left(I - \Gamma\right)^{-1} e_1
+$$
+
+Giving this rational function a less cryptic name of $R(m)$, we can find that this is
+
+$$
+R(m) = \frac{-m^{18}+3 m^{16}-5 m^{12}-6 m^{11}+16 m^9+9 m^8-12 m^7-12 m^6+9 m^4+2 m^3-3\n   m^2}{m^{24}-3 m^{22}-m^{18}+12 m^{17}+16 m^{16}-26 m^{15}-15 m^{14}-10 m^{13}+14\n   m^{12}+12 m^{11}+19 m^{10}+34 m^9-57 m^8-34 m^7+10 m^6+42 m^5+10 m^4-32 m^3+6\n   m^2+2 m}
 $$
