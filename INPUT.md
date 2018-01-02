@@ -677,3 +677,24 @@ $$
 \draw[fill=lightgray!40,draw=none] (24,1) rectangle (25,0);
 \end{tikzpicture}
 $$
+
+$$
+\begin{tikzpicture}
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw (2,3) rectangle (4,2) node[pos=0.5] {h};
+\draw[fill=lightgray!40,draw=none] (5,3) rectangle (6,2);
+\draw[fill=lightgray!40,draw=none] (9,3) rectangle (10,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[draw=none] (1,2) rectangle (2,1) node[pos=0.5] {\(\times\)};
+\draw (2,2) rectangle (4,1) node[pos=0.5] {h};
+\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (5,2) rectangle (6,1);
+\draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {or};
+\draw[draw=none] (8,2) rectangle (9,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (9,2) rectangle (10,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw (2,1) rectangle (4,0) node[pos=0.5] {h};
+\draw[fill=lightgray!40,draw=none] (5,1) rectangle (6,0);
+\draw[fill=lightgray!40,draw=none] (9,1) rectangle (10,0);
+\end{tikzpicture}
+$$
