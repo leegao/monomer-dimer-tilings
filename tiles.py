@@ -31,9 +31,9 @@
 # g   g  g v gg g hh g
 # '''.strip().splitlines()
 blocks = '''
- g
-=g
- g
+g
+gg
+g
 '''.strip().splitlines()
 
 def parse_blocks(blocks, c = ()):
@@ -80,10 +80,34 @@ def print_blocks(parsed_blocks, c = ()):
         elif token != ' ':
             print '\draw[draw=none] (%s,%s) rectangle (%s,%s) node[pos=0.5] {%s};' % (h, 3-v, h + 1, 3-(v + 1), token)
 
-print r'''
-$$
-\begin{tikzpicture}'''
-parse_blocks(blocks, c=['or', 'or', 'or'])
-print r'''\end{tikzpicture}
-$$
-'''
+ablocks = [
+    zip('ggg', block) for block in ('   ', 'g  ', ' g ', '  g', 'gg ', ' gg', 'g g')
+]
+
+rules = [
+    #000    100    010    001    110  011  101
+    ['h^3', 'v'  , ''   , 'v'  , 'm', 'm', 'm'], # 000 ->
+    ['m'  , ''   , ''   , ''   , '' , 'h', '' ], # 100 ->
+    ['m'  , ''   , ''   , ''   , '' , '' , 'h'], # 010 ->
+    ['m'  , ''   , ''   , ''   , 'h', '' , '' ], # 001 ->
+    ['v'  , 'm'  , 'm'  , 'h^2', '' , '' , '' ], # 110 ->
+    ['v'  , 'h^2', 'm'  , 'm'  , '' , '' , '' ], # 011 ->
+    [''   , 'm'  , 'h^2', 'm'  , '' , '' , '' ], # 101 ->
+]
+
+def fmt(block):
+    print r'''\begin{tikzpicture}[scale = 0.3]'''
+    parse_blocks(block, c=['or', 'or', 'or'])
+    print r'''\end{tikzpicture}'''
+
+print '~'
+for b in ablocks:
+    print '&'
+    fmt(b)
+
+print r'\\'
+for j, b in enumerate(ablocks):
+    fmt(b)
+    for i in range(7):
+        print r'& \vspace*{-0.65cm} ' + (r'\(%s\)'%rules[i][j] if rules[i][j] else '')
+    print r'\\'

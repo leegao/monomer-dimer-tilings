@@ -613,3 +613,169 @@ $$
 \draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
 \end{tikzpicture}
 $$
+
+-------------------------------------
+
+At this point, the astute reader may recognize these operational rules as a grammmar involving the transformation
+of one type of contour into another. We were careful to ensure that no rule can be constructed as a combination of
+a sequence of two or more other rules; in other words, this grammar in unambiguous.
+
+We can present these rules in a tableau:
+
+$$
+\begin{array}{p{1.0cm} p{1.0cm} p{1.0cm} p{1.0cm} p{1.0cm} p{1.0cm} p{1.0cm} p{1.0cm}}
+~
+&
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+& \vspace*{-0.65cm} \(h^3\)
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} \(v\)
+& \vspace*{-0.65cm} \(v\)
+& \vspace*{-0.65cm} 
+\\
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+& \vspace*{-0.65cm} \(v\)
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} \(h^2\)
+& \vspace*{-0.65cm} \(m\)
+\\
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} \(h^2\)
+\\
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+& \vspace*{-0.65cm} \(v\)
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} \(h^2\)
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} \(m\)
+\\
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} \(h\)
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+\\
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} \(h\)
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+\\
+\begin{tikzpicture}[scale = 0.3]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} \(h\)
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+\\
+\end{array}
+$$
