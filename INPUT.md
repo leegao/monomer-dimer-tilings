@@ -784,8 +784,23 @@ Reading vertically, each column encodes one of the rules presented above. For ex
 \draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
 \draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
-\end{tikzpicture}$ plus $h^3$ (three horizontal dominoes stacked together) will generate another $\begin{tikzpicture}[scale = 0.15]
+\end{tikzpicture}$ and $h^3$ (three horizontal dominoes stacked together) will generate another $\begin{tikzpicture}[scale = 0.15]
 \draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
 \draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}$. Similarly, appending a single $m$ will create either a $\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}$, a $\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}$, or a $\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
 \end{tikzpicture}$.
