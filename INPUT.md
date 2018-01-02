@@ -566,72 +566,14 @@ $$
 $$
 \begin{tikzpicture}
 \draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
-\draw (2,3) rectangle (3,2) node[pos=0.5] {m};
-\draw[fill=lightgray!40,draw=none] (4,3) rectangle (5,2);
-\draw[fill=lightgray!40,draw=none] (5,3) rectangle (6,2);
-\draw[fill=lightgray!40,draw=none] (7,3) rectangle (8,2);
-\draw[fill=lightgray!40,draw=none] (11,3) rectangle (12,2);
-\draw[fill=lightgray!40,draw=none] (14,3) rectangle (15,2);
-\draw (16,3) rectangle (17,2) node[pos=0.5] {m};
-\draw[fill=lightgray!40,draw=none] (18,3) rectangle (19,2);
-\draw[fill=lightgray!40,draw=none] (19,3) rectangle (20,2);
-\draw[fill=lightgray!40,draw=none] (21,3) rectangle (22,2);
-\draw (23,3) rectangle (24,2) node[pos=0.5] {m};
-\draw[fill=lightgray!40,draw=none] (25,3) rectangle (26,2);
-\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
-\draw[draw=none] (1,2) rectangle (2,1) node[pos=0.5] {\(\times\)};
-\draw (2,2) rectangle (3,1) node[pos=0.5] {m};
-\draw[draw=none] (3,2) rectangle (4,1) node[pos=0.5] {=};
-\draw[fill=lightgray!40,draw=none] (4,2) rectangle (5,1);
-\draw[fill=lightgray!40,draw=none] (5,2) rectangle (6,1);
-\draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {or};
-\draw[fill=lightgray!40,draw=none] (7,2) rectangle (8,1);
-\draw[draw=none] (8,2) rectangle (9,1) node[pos=0.5] {\(\times\)};
-\draw (9,2) rectangle (10,1) node[pos=0.5] {m};
-\draw[draw=none] (10,2) rectangle (11,1) node[pos=0.5] {=};
-\draw[fill=lightgray!40,draw=none] (11,2) rectangle (12,1);
-\draw[fill=lightgray!40,draw=none] (12,2) rectangle (13,1);
-\draw[draw=none] (13,2) rectangle (14,1) node[pos=0.5] {or};
-\draw[fill=lightgray!40,draw=none] (14,2) rectangle (15,1);
-\draw[draw=none] (15,2) rectangle (16,1) node[pos=0.5] {\(\times\)};
-\draw[draw=none] (17,2) rectangle (18,1) node[pos=0.5] {=};
-\draw[fill=lightgray!40,draw=none] (18,2) rectangle (19,1);
-\draw[draw=none] (20,2) rectangle (21,1) node[pos=0.5] {or};
-\draw[fill=lightgray!40,draw=none] (21,2) rectangle (22,1);
-\draw[draw=none] (22,2) rectangle (23,1) node[pos=0.5] {\(\times\)};
-\draw (23,2) rectangle (24,1) node[pos=0.5] {m};
-\draw[draw=none] (24,2) rectangle (25,1) node[pos=0.5] {=};
-\draw[fill=lightgray!40,draw=none] (25,2) rectangle (26,1);
-\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
-\draw[fill=lightgray!40,draw=none] (4,1) rectangle (5,0);
-\draw[fill=lightgray!40,draw=none] (7,1) rectangle (8,0);
-\draw (9,1) rectangle (10,0) node[pos=0.5] {m};
-\draw[fill=lightgray!40,draw=none] (11,1) rectangle (12,0);
-\draw[fill=lightgray!40,draw=none] (12,1) rectangle (13,0);
-\draw[fill=lightgray!40,draw=none] (14,1) rectangle (15,0);
-\draw (16,1) rectangle (17,0) node[pos=0.5] {m};
-\draw[fill=lightgray!40,draw=none] (18,1) rectangle (19,0);
-\draw[fill=lightgray!40,draw=none] (19,1) rectangle (20,0);
-\draw[fill=lightgray!40,draw=none] (21,1) rectangle (22,0);
-\draw (23,1) rectangle (24,0) node[pos=0.5] {m};
-\draw[fill=lightgray!40,draw=none] (25,1) rectangle (26,0);
-\end{tikzpicture}
-$$
-
-$$
-\begin{tikzpicture}
-\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
 \draw (2,3) rectangle (3,1) node[pos=0.5] {v};
 \draw[fill=lightgray!40,draw=none] (4,3) rectangle (5,2);
 \draw[fill=lightgray!40,draw=none] (5,3) rectangle (6,2);
 \draw[fill=lightgray!40,draw=none] (7,3) rectangle (8,2);
 \draw[fill=lightgray!40,draw=none] (11,3) rectangle (12,2);
 \draw[fill=lightgray!40,draw=none] (14,3) rectangle (15,2);
-\draw (16,3) rectangle (17,1) node[pos=0.5] {v};
-\draw[fill=lightgray!40,draw=none] (18,3) rectangle (19,2);
-\draw[fill=lightgray!40,draw=none] (20,3) rectangle (21,2);
-\draw (22,3) rectangle (23,2) node[pos=0.5] {m};
-\draw[fill=lightgray!40,draw=none] (24,3) rectangle (25,2);
+\draw (16,3) rectangle (18,2) node[pos=0.5] {h};
+\draw[fill=lightgray!40,draw=none] (19,3) rectangle (20,2);
 \draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
 \draw[draw=none] (1,2) rectangle (2,1) node[pos=0.5] {\(\times\)};
 \draw[draw=none] (3,2) rectangle (4,1) node[pos=0.5] {=};
@@ -647,44 +589,27 @@ $$
 \draw[draw=none] (13,2) rectangle (14,1) node[pos=0.5] {or};
 \draw[fill=lightgray!40,draw=none] (14,2) rectangle (15,1);
 \draw[draw=none] (15,2) rectangle (16,1) node[pos=0.5] {\(\times\)};
-\draw[draw=none] (17,2) rectangle (18,1) node[pos=0.5] {=};
-\draw[fill=lightgray!40,draw=none] (18,2) rectangle (19,1);
-\draw[draw=none] (19,2) rectangle (20,1) node[pos=0.5] {or};
-\draw[fill=lightgray!40,draw=none] (20,2) rectangle (21,1);
-\draw[draw=none] (21,2) rectangle (22,1) node[pos=0.5] {\(\times\)};
-\draw (22,2) rectangle (23,0) node[pos=0.5] {v};
-\draw[draw=none] (23,2) rectangle (24,1) node[pos=0.5] {=};
-\draw[fill=lightgray!40,draw=none] (24,2) rectangle (25,1);
+\draw (16,2) rectangle (18,1) node[pos=0.5] {h};
+\draw[draw=none] (18,2) rectangle (19,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (19,2) rectangle (20,1);
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
 \draw[fill=lightgray!40,draw=none] (4,1) rectangle (5,0);
 \draw[fill=lightgray!40,draw=none] (7,1) rectangle (8,0);
 \draw[fill=lightgray!40,draw=none] (11,1) rectangle (12,0);
 \draw[fill=lightgray!40,draw=none] (12,1) rectangle (13,0);
 \draw[fill=lightgray!40,draw=none] (14,1) rectangle (15,0);
-\draw (16,1) rectangle (17,0) node[pos=0.5] {m};
-\draw[fill=lightgray!40,draw=none] (18,1) rectangle (19,0);
-\draw[fill=lightgray!40,draw=none] (20,1) rectangle (21,0);
-\draw[fill=lightgray!40,draw=none] (24,1) rectangle (25,0);
+\draw (16,1) rectangle (18,0) node[pos=0.5] {h};
+\draw[fill=lightgray!40,draw=none] (19,1) rectangle (20,0);
 \end{tikzpicture}
 $$
+
+Finally, we will give the axiom that the empty board constitutes a single smooth column.
 
 $$
 \begin{tikzpicture}
 \draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
-\draw (2,3) rectangle (4,2) node[pos=0.5] {h};
-\draw[fill=lightgray!40,draw=none] (5,3) rectangle (6,2);
-\draw[fill=lightgray!40,draw=none] (9,3) rectangle (10,2);
-\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
-\draw[draw=none] (1,2) rectangle (2,1) node[pos=0.5] {\(\times\)};
-\draw (2,2) rectangle (4,1) node[pos=0.5] {h};
-\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {=};
-\draw[fill=lightgray!40,draw=none] (5,2) rectangle (6,1);
-\draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {or};
-\draw[draw=none] (8,2) rectangle (9,1) node[pos=0.5] {=};
-\draw[fill=lightgray!40,draw=none] (9,2) rectangle (10,1);
-\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
-\draw (2,1) rectangle (4,0) node[pos=0.5] {h};
-\draw[fill=lightgray!40,draw=none] (5,1) rectangle (6,0);
-\draw[fill=lightgray!40,draw=none] (9,1) rectangle (10,0);
+\draw[draw=none] (0,2) rectangle (1,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
 \end{tikzpicture}
 $$

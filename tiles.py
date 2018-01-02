@@ -20,10 +20,20 @@
 # g*hh=gt =g
 # g hh g   g
 # '''.strip().splitlines()
+# blocks = '''
+# g  m gg g    g  g  hh gg
+# gg* =ggtgg* =ggtgg*  =g
+# g    g  g  m gg g  hh gg
+# '''.strip().splitlines()
+# blocks = '''
+# g v gg g   g  g hh g
+# g*v=ggtg*v=ggtg*hh=g
+# g   g  g v gg g hh g
+# '''.strip().splitlines()
 blocks = '''
-g  m gg g    g  g  hh gg
-gg* =ggtgg* =ggtgg*  =g
-g    g  g  m gg g  hh gg
+ g
+=g
+ g
 '''.strip().splitlines()
 
 def parse_blocks(blocks, c = ()):
