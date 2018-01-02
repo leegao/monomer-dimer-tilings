@@ -874,3 +874,65 @@ v & h^2 & m & m &  &  & \\
 $$
 
 The above power denotes the enumeration of all shapes after applying $n$ transformations.
+
+Now, we know that our initial state is an empty board $\epsilon$, which is within the family of the $\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}$ object. Therefore, after $n$ transformations, we will have the following set of possible configurations.
+
+$$
+\left(\begin{array}{c}
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+\\
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
+\end{tikzpicture}
+\\
+\end{array}\right) = \Gamma^n \times \left(\begin{array}{c}1\\0\\0\\0\\0\\0\\0\end{array}\right)
+$$
