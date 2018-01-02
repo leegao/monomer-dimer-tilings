@@ -607,7 +607,7 @@ Finally, we will give the axiom that the empty board constitutes a single smooth
 
 $$
 \begin{tikzpicture}
-\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);
 \draw[draw=none] (0,2) rectangle (1,1) node[pos=0.5] {=};
 \draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
 \draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);

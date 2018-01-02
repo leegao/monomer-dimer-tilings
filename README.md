@@ -98,4 +98,4 @@ Finally, let's enumerate the set of equations that starts off from the smooth co
 
 Finally, we will give the axiom that the empty board constitutes a single smooth column.
 
-<p align="center"><img alt="$$&#10;\begin{tikzpicture}&#10;\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);&#10;\draw[draw=none] (0,2) rectangle (1,1) node[pos=0.5] {=};&#10;\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);&#10;\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);&#10;\end{tikzpicture}&#10;$$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/53768ba239d5ac0e2e964ab298d30b99.svg" align=middle width="93.54081pt" height="140.32095pt"/></p>
+<p align="center"><img alt="$$&#10;\begin{tikzpicture}&#10;\draw[fill=lightgray!40,draw=none] (1,3) rectangle (2,2);&#10;\draw[draw=none] (0,2) rectangle (1,1) node[pos=0.5] {=};&#10;\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);&#10;\draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);&#10;\end{tikzpicture}&#10;$$" src="https://rawgit.com/leegao/monomer-dimer-tilings/svgs/svgs/69fa71c0bad0c1b1192e936d66822ea1.svg" align=middle width="76.5501pt" height="140.32095pt"/></p>
