@@ -1003,3 +1003,26 @@ $$
 \\
 \end{array}\right) = \left(I - \Gamma\right)^{-1} \times e_1
 $$
+
+If we only care about the total number blocks that occurs within a particular tiling, then we don't
+really care if a domino is a $v$ or an $h$; we just care that each is a pair of monomers. Therefore, we
+can set
+
+$$
+v = h = m^2.
+$$
+
+Finally, since we only care about rectangles, we just want to compute $\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture}$. This can be done by taking the first element of the full reachable configuration
+vector, that is
+
+$$
+\begin{tikzpicture}[scale = 0.15]
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\end{tikzpicture} = e_1^{T} \times \left(I - \Gamma\right)^{-1} e_1
+$$
