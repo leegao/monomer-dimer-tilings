@@ -1,9 +1,9 @@
 # Tiles a particular 3 x N block with monomers and dimers
 
 blocks = '''
-g  hh gg g  m g 
-gg*  =g tgg* =g
-gg    g  gg   g
+g  m g g  hh gg
+gg* =gtgg*  =g
+g  m g g  hh gg
 '''.strip().splitlines()
 
 def parse_blocks(blocks, c = ()):

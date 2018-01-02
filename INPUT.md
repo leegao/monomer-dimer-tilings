@@ -440,3 +440,36 @@ $$
 \draw[fill=lightgray!40,draw=none] (14,1) rectangle (15,0);
 \end{tikzpicture}
 $$
+
+We couldn't generalize the single-hump in the middle contour in the above example, but we can enumerate
+their equations explicitly.
+
+$$
+\begin{tikzpicture}
+\draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
+\draw (3,3) rectangle (4,2) node[pos=0.5] {m};
+\draw[fill=lightgray!40,draw=none] (5,3) rectangle (6,2);
+\draw[fill=lightgray!40,draw=none] (7,3) rectangle (8,2);
+\draw (10,3) rectangle (12,2) node[pos=0.5] {h};
+\draw[fill=lightgray!40,draw=none] (13,3) rectangle (14,2);
+\draw[fill=lightgray!40,draw=none] (14,3) rectangle (15,2);
+\draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
+\draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
+\draw[draw=none] (2,2) rectangle (3,1) node[pos=0.5] {\(\times\)};
+\draw[draw=none] (4,2) rectangle (5,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (5,2) rectangle (6,1);
+\draw[draw=none] (6,2) rectangle (7,1) node[pos=0.5] {or};
+\draw[fill=lightgray!40,draw=none] (7,2) rectangle (8,1);
+\draw[fill=lightgray!40,draw=none] (8,2) rectangle (9,1);
+\draw[draw=none] (9,2) rectangle (10,1) node[pos=0.5] {\(\times\)};
+\draw[draw=none] (12,2) rectangle (13,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (13,2) rectangle (14,1);
+\draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
+\draw (3,1) rectangle (4,0) node[pos=0.5] {m};
+\draw[fill=lightgray!40,draw=none] (5,1) rectangle (6,0);
+\draw[fill=lightgray!40,draw=none] (7,1) rectangle (8,0);
+\draw (10,1) rectangle (12,0) node[pos=0.5] {h};
+\draw[fill=lightgray!40,draw=none] (13,1) rectangle (14,0);
+\draw[fill=lightgray!40,draw=none] (14,1) rectangle (15,0);
+\end{tikzpicture}
+$$
