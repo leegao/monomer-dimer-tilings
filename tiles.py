@@ -106,8 +106,8 @@ for b in ablocks:
     fmt(b)
 
 print r'\\'
-for j, b in enumerate(ablocks):
+for i, b in enumerate(ablocks):
     fmt(b)
-    for i in range(7):
+    for j in range(7):
         print r'& \vspace*{-0.65cm} ' + (r'\(%s\)'%rules[i][j] if rules[i][j] else '')
     print r'\\'

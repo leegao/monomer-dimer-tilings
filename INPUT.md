@@ -683,12 +683,12 @@ $$
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
 \end{tikzpicture}
 & \vspace*{-0.65cm} \(h^3\)
-& \vspace*{-0.65cm} \(m\)
-& \vspace*{-0.65cm} \(m\)
-& \vspace*{-0.65cm} \(m\)
-& \vspace*{-0.65cm} \(v\)
 & \vspace*{-0.65cm} \(v\)
 & \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} \(v\)
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} \(m\)
 \\
 \begin{tikzpicture}[scale = 0.3]
 \draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
@@ -696,13 +696,13 @@ $$
 \draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
 \end{tikzpicture}
-& \vspace*{-0.65cm} \(v\)
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} 
 & \vspace*{-0.65cm} \(m\)
-& \vspace*{-0.65cm} \(h^2\)
-& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} \(h\)
+& \vspace*{-0.65cm} 
 \\
 \begin{tikzpicture}[scale = 0.3]
 \draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
@@ -710,13 +710,13 @@ $$
 \draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
 \end{tikzpicture}
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} 
 & \vspace*{-0.65cm} \(m\)
-& \vspace*{-0.65cm} \(m\)
-& \vspace*{-0.65cm} \(h^2\)
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} \(h\)
 \\
 \begin{tikzpicture}[scale = 0.3]
 \draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
@@ -724,13 +724,13 @@ $$
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
 \draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
 \end{tikzpicture}
-& \vspace*{-0.65cm} \(v\)
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} \(h^2\)
 & \vspace*{-0.65cm} \(m\)
-& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} \(h\)
+& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} 
 \\
 \begin{tikzpicture}[scale = 0.3]
 \draw[fill=lightgray!40,draw=none] (0,3) rectangle (1,2);
@@ -739,10 +739,10 @@ $$
 \draw[fill=lightgray!40,draw=none] (1,2) rectangle (2,1);
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
 \end{tikzpicture}
+& \vspace*{-0.65cm} \(v\)
 & \vspace*{-0.65cm} \(m\)
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} \(h\)
+& \vspace*{-0.65cm} \(m\)
+& \vspace*{-0.65cm} \(h^2\)
 & \vspace*{-0.65cm} 
 & \vspace*{-0.65cm} 
 & \vspace*{-0.65cm} 
@@ -754,10 +754,10 @@ $$
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
 \draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
 \end{tikzpicture}
+& \vspace*{-0.65cm} \(v\)
+& \vspace*{-0.65cm} \(h^2\)
 & \vspace*{-0.65cm} \(m\)
-& \vspace*{-0.65cm} \(h\)
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} \(m\)
 & \vspace*{-0.65cm} 
 & \vspace*{-0.65cm} 
 & \vspace*{-0.65cm} 
@@ -769,10 +769,10 @@ $$
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
 \draw[fill=lightgray!40,draw=none] (1,1) rectangle (2,0);
 \end{tikzpicture}
+& \vspace*{-0.65cm} 
 & \vspace*{-0.65cm} \(m\)
-& \vspace*{-0.65cm} 
-& \vspace*{-0.65cm} \(h\)
-& \vspace*{-0.65cm} 
+& \vspace*{-0.65cm} \(h^2\)
+& \vspace*{-0.65cm} \(m\)
 & \vspace*{-0.65cm} 
 & \vspace*{-0.65cm} 
 & \vspace*{-0.65cm} 
