@@ -1,15 +1,15 @@
 # Tiles a particular 3 x N block with monomers and dimers
 
-blocks = '''
-gg   g gg   gg gg   gg 
-g *v=gtg *m=ggtg * =g 
-g  v g g    g  g  m gg
-'''.strip().splitlines()
 # blocks = '''
-# gg   g gg    g
-# g *m=gtg *hh=gg
-# g  m g g  hh gg
+# g  v g g  m gg g    g
+# g *v=gtg * =g tg *m=gg
+# gg   g gg   gg gg   gg
 # '''.strip().splitlines()
+blocks = '''
+g  m g g  hh gg
+g *m=gtg *hh=gg
+gg   g gg    g
+'''.strip().splitlines()
 
 def parse_blocks(blocks, c = ()):
     seen = set()
