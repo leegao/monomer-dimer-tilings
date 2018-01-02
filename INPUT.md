@@ -447,6 +447,12 @@ $$
 \draw[fill=lightgray!40,draw=none] (7,3) rectangle (8,2);
 \draw[fill=lightgray!40,draw=none] (8,3) rectangle (9,2);
 \draw[fill=lightgray!40,draw=none] (13,3) rectangle (14,2);
+\draw[fill=lightgray!40,draw=none] (16,3) rectangle (17,2);
+\draw[fill=lightgray!40,draw=none] (17,3) rectangle (18,2);
+\draw[fill=lightgray!40,draw=none] (22,3) rectangle (23,2);
+\draw[fill=lightgray!40,draw=none] (25,3) rectangle (26,2);
+\draw[fill=lightgray!40,draw=none] (26,3) rectangle (27,2);
+\draw[fill=lightgray!40,draw=none] (31,3) rectangle (32,2);
 \draw[fill=lightgray!40,draw=none] (0,2) rectangle (1,1);
 \draw[draw=none] (2,2) rectangle (3,1) node[pos=0.5] {\(\times\)};
 \draw (3,2) rectangle (4,1) node[pos=0.5] {m};
@@ -459,6 +465,19 @@ $$
 \draw[draw=none] (12,2) rectangle (13,1) node[pos=0.5] {=};
 \draw[fill=lightgray!40,draw=none] (13,2) rectangle (14,1);
 \draw[fill=lightgray!40,draw=none] (14,2) rectangle (15,1);
+\draw[draw=none] (15,2) rectangle (16,1) node[pos=0.5] {or};
+\draw[fill=lightgray!40,draw=none] (16,2) rectangle (17,1);
+\draw[draw=none] (18,2) rectangle (19,1) node[pos=0.5] {\(\times\)};
+\draw (19,2) rectangle (21,1) node[pos=0.5] {h};
+\draw[draw=none] (21,2) rectangle (22,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (22,2) rectangle (23,1);
+\draw[fill=lightgray!40,draw=none] (23,2) rectangle (24,1);
+\draw[draw=none] (24,2) rectangle (25,1) node[pos=0.5] {or};
+\draw[fill=lightgray!40,draw=none] (25,2) rectangle (26,1);
+\draw[draw=none] (27,2) rectangle (28,1) node[pos=0.5] {\(\times\)};
+\draw (28,2) rectangle (29,1) node[pos=0.5] {m};
+\draw[draw=none] (30,2) rectangle (31,1) node[pos=0.5] {=};
+\draw[fill=lightgray!40,draw=none] (31,2) rectangle (32,1);
 \draw[fill=lightgray!40,draw=none] (0,1) rectangle (1,0);
 \draw (3,1) rectangle (4,0) node[pos=0.5] {m};
 \draw[fill=lightgray!40,draw=none] (5,1) rectangle (6,0);
@@ -466,6 +485,13 @@ $$
 \draw (10,1) rectangle (12,0) node[pos=0.5] {h};
 \draw[fill=lightgray!40,draw=none] (13,1) rectangle (14,0);
 \draw[fill=lightgray!40,draw=none] (14,1) rectangle (15,0);
+\draw[fill=lightgray!40,draw=none] (16,1) rectangle (17,0);
+\draw (19,1) rectangle (20,0) node[pos=0.5] {m};
+\draw[fill=lightgray!40,draw=none] (22,1) rectangle (23,0);
+\draw[fill=lightgray!40,draw=none] (25,1) rectangle (26,0);
+\draw (28,1) rectangle (30,0) node[pos=0.5] {h};
+\draw[fill=lightgray!40,draw=none] (31,1) rectangle (32,0);
+\draw[fill=lightgray!40,draw=none] (32,1) rectangle (33,0);
 \end{tikzpicture}
 $$
 
