@@ -546,7 +546,7 @@ $$
 \draw[draw=none] (15,2) rectangle (16,1) node[pos=0.5] {\(\times\)};
 \draw[draw=none] (17,2) rectangle (18,1) node[pos=0.5] {=};
 \draw[fill=lightgray!40,draw=none] (18,2) rectangle (19,1);
-\draw[draw=none] (20,2) rectangle (21,1) node[pos=0.5] {c};
+\draw[draw=none] (20,2) rectangle (21,1) node[pos=0.5] {or};
 \draw[fill=lightgray!40,draw=none] (21,2) rectangle (22,1);
 \draw[draw=none] (22,2) rectangle (23,1) node[pos=0.5] {\(\times\)};
 \draw (23,2) rectangle (24,1) node[pos=0.5] {m};
