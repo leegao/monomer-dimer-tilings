@@ -5,16 +5,16 @@
 # g *v=gtg * =g tg *m=gg
 # gg   g gg   gg gg   gg
 # '''.strip().splitlines()
-blocks = '''
-g  m g g  hh gg 
-g *m=gtg *hh=gg
-gg   g gg    g 
-'''.strip().splitlines()
 # blocks = '''
-# gg   g gg    g
-# g *m=gtg *hh=gg
-# g  m g g  hh gg
+# g  hh gg
+# g *hh=gg
+# gg    g
 # '''.strip().splitlines()
+blocks = '''
+gg    g
+g *hh=gg
+g  hh gg
+'''.strip().splitlines()
 # blocks = '''
 # g hh g   g
 # g*hh=gt =g
